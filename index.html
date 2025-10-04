@@ -48,7 +48,7 @@ const overlay = new ol.Overlay({
 map.addOverlay(overlay);
 
 // Load CSV and add points
-Papa.parse('D:/Personal Projects/ESRI/Data/sales_hotspots.csv', {
+Papa.parse('Data.csv', {
   download: true,
   header: true,
   complete: function(results) {
@@ -84,4 +84,5 @@ map.on('singleclick', function(evt) {
   }
 });
 </script>
+
 </html>
