@@ -48,7 +48,7 @@ const overlay = new ol.Overlay({
 map.addOverlay(overlay);
 
 // Load CSV and add points
-Papa.parse('Data.csv', {
+Papa.parse('charities_geocoded.csv', {
   download: true,
   header: true,
   complete: function(results) {
@@ -86,3 +86,4 @@ map.on('singleclick', function(evt) {
 </script>
 
 </html>
+
